@@ -1,0 +1,27 @@
+{
+  "name": "Slack_TicTacToe",
+  "description": "A text based Tic-Tac-Toe game playable in Slack channel",
+  "keywords": ["TicTacToe", "Slack", "slack", "game"],
+  "scripts": {
+  },
+  "env": {
+    "SLACK_TTT_TOKEN": {
+      "description": "Your Slack team's token value.",
+      "value": "REPLACE_THIS_TO_YOURS"
+    },
+    "SLACK_BOT_TOKEN": {
+      "description": "Bot auth token of your Slack team. Server side need this to have channel and opponent player's information",
+      "value" : "REPLACE_THIS_TO_YOURS"
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
